@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { WalletBalanceDisplay } from "../hooks/useWalletBalance";
-import { SelectWalletModalComponent } from "./walletModal";
+import { SelectWalletModalComponent } from "./SelectWalletModal";
+import { WalletOverviewComponent } from "./WalletOverviewModal";
+import { FundModalComponent } from "./FundModal";
 
 const GameDashboard: React.FC = () => {
   const [selectedGame, setSelectedGame] = useState<string>("");
@@ -17,7 +19,11 @@ const GameDashboard: React.FC = () => {
         <h2>Game Dashboard</h2>
         <div className="balance-info">
           <WalletBalanceDisplay />
-          <SelectWalletModalComponent />
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            <SelectWalletModalComponent />
+            <WalletOverviewComponent />
+            <FundModalComponent />
+          </div>
         </div>
       </div>
 

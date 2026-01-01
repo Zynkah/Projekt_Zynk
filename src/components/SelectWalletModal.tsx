@@ -34,6 +34,7 @@ export const SelectWalletModalComponent = () => {
 
   // Simple check for mobile screen width; adjust logic as needed
   const isMobileScreen = window.innerWidth <= 768;
+  
 
   return (
     <>
