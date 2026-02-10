@@ -14,7 +14,6 @@
 }
 .casino-app {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   color: white;
 }
 
@@ -30,36 +29,6 @@
 .app-header h1 {
   margin: 0;
   font-size: 2rem;
-}
-
-.connect-btn, .disconnect-btn, .play-btn, .bet-btn {
-  padding: 0.75rem 1.5rem;
-  background: #0066ff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.connect-btn:hover, .disconnect-btn:hover, .play-btn:hover, .bet-btn:hover {
-  background: #0052cc;
-  transform: translateY(-2px);
-}
-
-.wallet-info {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.wallet-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-  font-size: 0.875rem;
 }
 
 .landing-page {
@@ -89,7 +58,7 @@
   background: rgba(0, 102, 255, 0.1);
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  border: 1px solid #0066ff;
+  border: 1px solid var(--deep-purple);
 }
 
 .games-grid {
@@ -112,7 +81,7 @@
 .game-card:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.1);
-  border-color: #0066ff;
+  border-color: var(--deep-purple);
 }
 
 .game-area {
@@ -336,8 +305,12 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .game-controls {

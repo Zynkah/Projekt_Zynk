@@ -9,7 +9,7 @@ const YourCasinoApp: React.FC = () => {
   return (
     <div className="casino-app">
       <header className="app-header">
-        <h1>🎰 Zynk Casino</h1>
+        <h1>Projekt Zynk</h1>
         <WalletConnection />
       </header>
 
@@ -22,7 +22,7 @@ const YourCasinoApp: React.FC = () => {
 
 const LandingPage: React.FC = () => (
   <div className="landing-page">
-    <h2>Welcome to Zynk Casino</h2>
+    <h2>Welcome to Projekt Zynk</h2>
     <p>Connect your wallet to start playing!</p>
   </div>
 );

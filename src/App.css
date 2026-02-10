@@ -1,8 +1,12 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+
+  --light-grey:#999999;
+  --grey:#5B5B5B;
+  --dark-grey: #1e1d1d;
+  --purple: #3d1b5e;
+  --deep-purple: #30124d;
 }
 
 .logo {
