@@ -8,7 +8,8 @@ export const WalletInfo = () => {
   return (
     <div className="balance-info">
       <WalletBalanceDisplay />
-      <div className="balance-buttons-wrapper ">
+      <div className="balance-buttons-wrapper">
+        {" "}
         <SelectWalletModalComponent />
         <WalletOverviewComponent />
         <FundModalComponent />
