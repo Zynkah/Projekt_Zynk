@@ -20,8 +20,15 @@
 .disconnect-btn:hover,
 .play-btn:hover,
 .bet-btn:hover,
-.wallet-btn:hover {
+.wallet-btn:hover,
+.connect-btn:focus-visible,
+.disconnect-btn:focus-visible,
+.play-btn:focus-visible,
+.bet-btn:focus-visible,
+.wallet-btn:focus-visible {
   background: var(--deep-purple);
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
 }
 
 .wallet-info {
@@ -71,6 +78,7 @@
 
 .dropdown-item:hover {
   background: #f5f5f5;
+  color: var(--dark-grey);
 }
 
 .connect-item {

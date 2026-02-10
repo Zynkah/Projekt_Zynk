@@ -48,10 +48,7 @@ const WalletConnection: React.FC = () => {
 
   return (
     <div className="wallet-dropdown-container" ref={dropdownRef}>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="wallet-btn"
-      >
+      <button onClick={() => setIsOpen(!isOpen)} className="wallet-btn">
         Wallet {isOpen ? "▲" : "▼"}
       </button>
 
@@ -68,12 +65,16 @@ const WalletConnection: React.FC = () => {
             <>
               <div className="wallet-details">
                 {connectedWallets && connectedWallets.length > 0 ? (
-                  connectedWallets.map((wallet, index) => (
-                    <div key={index} className="wallet-item">
+                  connectedWallets.map((wallet) => (
+                    <div
+                      key={wallet.address ?? wallet.walletClientType}
+                      className="wallet-item"
+                    >
                       <span>🔗 {wallet.walletClientType || "Wallet"}</span>
                       <span className="wallet-address">
-                        {wallet.address?.slice(0, 6)}...
-                        {wallet.address?.slice(-4)}
+                        {wallet.address
+                          ? `${wallet.address.slice(0, 6)}...${wallet.address.slice(-4)}`
+                          : "No address"}
                       </span>
                     </div>
                   ))
