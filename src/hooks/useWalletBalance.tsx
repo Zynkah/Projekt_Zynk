@@ -11,22 +11,23 @@ export function WalletBalanceDisplay() {
     <div>
       <div className="balance-display">
         <div>
-          <button onClick={refetchBalance}>Refresh</button>
-        </div>
-        {solanaBalance !== null && solanaBalance !== undefined && (
-          <div className="balance-item">
+          <h2>Wallet Balance</h2>
+          {solanaBalance !== null && solanaBalance !== undefined && (
             <span>SOL: {Number(solanaBalance).toFixed(6)}</span>
-          </div>
-        )}
-        {ethereumBalance !== null && ethereumBalance !== undefined && (
-          <div className="balance-item">
-            <span>ETH: {Number(ethereumBalance).toFixed(6)}</span>
-          </div>
-        )}
-        {(solanaBalance === null || solanaBalance === undefined) &&
-          (ethereumBalance === null || ethereumBalance === undefined) && (
-            <span>No wallet connected</span>
           )}
+          {ethereumBalance !== null && ethereumBalance !== undefined && (
+            <span>ETH: {Number(ethereumBalance).toFixed(6)}</span>
+          )}
+          {(solanaBalance === null || solanaBalance === undefined) &&
+            (ethereumBalance === null || ethereumBalance === undefined) && (
+              <span>No wallet connected</span>
+            )}
+        </div>
+        <div>
+          <button className="wallet-btn" onClick={refetchBalance}>
+            Refresh
+          </button>
+        </div>
       </div>
     </div>
   );

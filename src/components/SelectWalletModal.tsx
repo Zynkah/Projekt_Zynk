@@ -38,7 +38,7 @@ export const SelectWalletModalComponent = () => {
 
   return (
     <>
-      <button onClick={() => setWalletModalOpen(true)}>
+      <button className="wallet-btn" onClick={() => setWalletModalOpen(true)}>
         Open Switch Wallet Modal
       </button>
       {isWalletModalOpen && (

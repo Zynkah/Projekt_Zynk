@@ -6,7 +6,7 @@ export function FundModalComponent() {
   const [isOpen, setIsOpen] = useState(false);
   const [stepIdx, setStepIdx] = useState(0);
   const handleTransferNext = () => setStepIdx(1);
-  
+
   const { walletAddress } = useActiveWallet();
   const { fundWallet } = useFundWallet();
 
@@ -17,7 +17,9 @@ export function FundModalComponent() {
 
   return (
     <>
-      <button onClick={() => setIsOpen(true)}>Open Fund Wallet Modal</button>
+      <button className="wallet-btn" onClick={() => setIsOpen(true)}>
+        Open Fund Wallet Modal
+      </button>
       <FundWalletModal
         isOpen={isOpen}
         onClose={() => {

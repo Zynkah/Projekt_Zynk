@@ -1,30 +1,16 @@
 import React, { useState } from "react";
-import { WalletBalanceDisplay } from "../hooks/useWalletBalance";
-import { SelectWalletModalComponent } from "./SelectWalletModal";
-import { WalletOverviewComponent } from "./WalletOverviewModal";
-import { FundModalComponent } from "./FundModal";
+import { games } from "../data/games";
+import { WalletInfo } from "./WalletInfo";
 
 const GameDashboard: React.FC = () => {
   const [selectedGame, setSelectedGame] = useState<string>("");
 
-  const games = [
-    { id: "slots", name: "🎰 Slots", description: "Classic slot machine" },
-    { id: "blackjack", name: "♠️ Blackjack", description: "Beat the dealer" },
-    { id: "roulette", name: "🎲 Roulette", description: "Spin to win" },
-  ];
-
   return (
     <div className="game-dashboard">
+      <WalletInfo />
+      
       <div className="dashboard-header">
         <h2>Game Dashboard</h2>
-        <div className="balance-info">
-          <WalletBalanceDisplay />
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            <SelectWalletModalComponent />
-            <WalletOverviewComponent />
-            <FundModalComponent />
-          </div>
-        </div>
       </div>
 
       <div className="games-grid">

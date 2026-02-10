@@ -8,18 +8,18 @@ export const WalletOverviewComponent = () => {
   const [isWalletModalOpen, setWalletModalOpen] = useState(false);
   const { connectedWallets } = useConnectedWallets();
 
-const getWalletIcon = () => {
-  const walletType = connectedWallets[0]?.meta?.name?.toLowerCase() || "";
+  const getWalletIcon = () => {
+    const walletType = connectedWallets[0]?.meta?.name?.toLowerCase() || "";
 
-  console.log("Determining icon for wallet type:", walletType);
-  if (walletType === "privy") return privyIcon;
-  if (walletType === "metamask") return metaMaskIcon;
-  return walletIcon;
-};
+    console.log("Determining icon for wallet type:", walletType);
+    if (walletType === "privy") return privyIcon;
+    if (walletType === "metamask") return metaMaskIcon;
+    return walletIcon;
+  };
 
   return (
     <>
-      <button onClick={() => setWalletModalOpen(true)}>
+      <button className="wallet-btn" onClick={() => setWalletModalOpen(true)}>
         Open Wallet Overview Modal
       </button>
       {isWalletModalOpen && (

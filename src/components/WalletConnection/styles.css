@@ -82,7 +82,8 @@
 }
 
 .connect-item {
-  color: var(--purple);
+  text-transform: uppercase;
+  text-align: end;
 }
 
 .disconnect-item {
