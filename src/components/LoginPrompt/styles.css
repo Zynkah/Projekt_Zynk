@@ -1,0 +1,40 @@
+.login-prompt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.login-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.supported-wallets {
+  margin-top: 2rem;
+  opacity: 0.8;
+}
+
+.wallet-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
