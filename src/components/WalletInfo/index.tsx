@@ -6,7 +6,7 @@ import { WalletOverviewComponent } from "../WalletOverviewModal";
 
 export const WalletInfo = () => {
   return (
-    <div className="balance-info">
+    <div className="balance-container">
       <div className="balance-display-wrapper">
         <WalletBalanceDisplay />
       </div>

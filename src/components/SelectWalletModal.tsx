@@ -1,5 +1,8 @@
 import { SelectWalletModal, useConnectedWallets } from "fare-privy-core";
 import { useState } from "react";
+import dragIcon from "../assets/icons/drag-bar.svg";
+import caretDownIcon from "../assets/icons/caret-down.svg";
+import privyIcon from "../assets/icons/privy-icon.svg";
 import linkwallet from "../assets/icons/link-wallet.png";
 import { usePrivy } from "@privy-io/react-auth";
 
@@ -51,9 +54,9 @@ export const SelectWalletModalComponent = () => {
           linkWalletToUser={linkWalletToUser}
           embeddedWalletLinks={embeddedWalletLinks}
           icons={{
-            dragBar: "/icons/drag-bar.svg",
-            privyIcon: "/icons/privy.svg",
-            caretDown: "/icons/caret-down.svg",
+            dragBar: dragIcon,
+            privyIcon: privyIcon,
+            caretDown: caretDownIcon,
             linkWallet: linkwallet,
           }}
           isMobileScreen={isMobileScreen}
