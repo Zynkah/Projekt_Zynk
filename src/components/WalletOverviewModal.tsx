@@ -11,7 +11,6 @@ export const WalletOverviewComponent = () => {
   const getWalletIcon = () => {
     const walletType = connectedWallets[0]?.meta?.name?.toLowerCase() || "";
 
-    console.log("Determining icon for wallet type:", walletType);
     if (walletType === "privy") return privyIcon;
     if (walletType === "metamask") return metaMaskIcon;
     return walletIcon;

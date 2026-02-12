@@ -54,7 +54,6 @@
   margin-bottom: 2rem;
 }
 
-
 .games-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -113,6 +112,13 @@
   background: rgba(255, 255, 255, 0.05);
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .balance-container {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 .balance-label {
