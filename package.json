@@ -21,7 +21,7 @@
     "@solana/wallet-adapter-wallets": "^0.19.37",
     "@solana/web3.js": "^1.98.4",
     "ethers": "^6.15.0",
-    "fare-privy-core": "^1.9.7",
+    "fare-privy-core": "^1.9.13",
     "permissionless": "^0.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
