@@ -1,7 +1,3 @@
-Here’s a **professional, clear, and comprehensive `README.md`** for your **`fare-privy-core`** npm package — written to help other developers understand what it is, why it exists, and how to use it:
-
----
-
 # 📦 fare-privy-core
 
 **A React authentication + wallet management core for Privy-powered Web3 apps** — optimized for casino, gaming, and onchain experiences.
@@ -182,3 +178,4 @@ MIT
 If you want, I can also generate a **demo app example**, **API reference**, or **TS types docs** to include in the repo.
 
 [1]: https://github.com/fareplay-labs/privy-lib?utm_source=chatgpt.com "fareplay-labs/privy-lib"
+
