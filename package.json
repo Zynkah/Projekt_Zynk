@@ -25,6 +25,7 @@
     "permissionless": "^0.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-router-dom": "^7.13.0",
     "styled-components": "^4.4.1",
     "valtio": "^1.12.0",
     "viem": "^2.39.0"

@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
-export const SCasionoApp = styled.div`
+export const SCasinoApp = styled.div`
   min-height: 100vh;
   color: #fff;
 `;
-
 export const SAppHeader = styled.header`
   display: flex;
   justify-content: space-between;

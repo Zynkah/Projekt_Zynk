@@ -1,8 +1,8 @@
 export const Links = [
     {
         id: 1,
-        name: "Home",
-        to: '/'
+        name: "Game Dashboard",
+        to: '/game-dashboard'
     },
     {
         id: 2,

@@ -1,18 +1,18 @@
 import React from "react";
 import WalletConnection from "../WalletConnection";
-import GameDashboard from "../GameDashboard";
 import {
-  SCasionoApp,
+  SCasinoApp,
   SAppHeader,
   SAppMain,
   SAppContainer,
   SAppAside,
 } from "./styles";
 import { SideNav } from "../SideNav";
+import { PublicRoutes } from "../../Router";
 
 const Layout: React.FC = () => {
   return (
-    <SCasionoApp>
+    <SCasinoApp>
       <SAppHeader>
         <h1>Projekt Zynk</h1>
         <WalletConnection />
@@ -23,10 +23,10 @@ const Layout: React.FC = () => {
           <SideNav />
         </SAppAside>
         <SAppMain>
-          <GameDashboard />
+          <PublicRoutes />
         </SAppMain>
       </SAppContainer>
-    </SCasionoApp>
+    </SCasinoApp>
   );
 };
 
