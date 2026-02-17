@@ -4,6 +4,7 @@ export const SCasinoApp = styled.div`
   min-height: 100vh;
   color: #fff;
 `;
+
 export const SAppHeader = styled.header`
   display: flex;
   justify-content: space-between;
@@ -27,15 +28,11 @@ export const SAppContainer = styled.div`
 `;
 
 export const SAppAside = styled.aside`
-  width: 400px;
+  width: 250px;
   min-width: 0;
   max-width: 100vw;
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: width;
-
-  @media (max-width: 1200px) {
-    width: 300px;
-  }
 
   @media (max-width: 768px) {
     display: none;

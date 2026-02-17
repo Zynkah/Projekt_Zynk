@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SSideNavWrapper = styled.div`
-  width: 250px;
+  width: 200px;
   background-color: #333;
   color: #fff;
   height: 100vh;
@@ -14,8 +14,9 @@ export const SSideNavWrapper = styled.div`
 
 export const SUnorderedList = styled.ul`
   list-style-type: none;
-    padding: 0;
-    `
+  padding: 0;
+  text-align: left;
+`;
 
 export const SListItem = styled.li`
   margin-bottom: 10px;

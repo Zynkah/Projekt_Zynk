@@ -4,23 +4,28 @@ export const Links = [
         name: "Game Dashboard",
         to: '/game-dashboard'
     },
-    {
+        {
         id: 2,
+        name: "Wallet Info",
+        to: '/wallet-info'
+    },
+    {
+        id: 3,
         name: "Switch Wallet Modal",
         to: '/switch-wallet'
     },
     {
-        id: 3,
+        id: 4,
         name: "Wallet Overview Modal",
         to: '/wallet-overview'
     },
     {
-        id: 4,
+        id: 5,
         name: "Fund Wallet Modal",
         to: '/fund-wallet'
     },
     {
-        id: 5,
+        id: 6,
         name: "QuickPlay Modal",
         to: '/quickplay'
     },
