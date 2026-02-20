@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const SSideNavWrapper = styled.div`
-  width: 200px;
-  background-color: #333;
+  width: 180px;
+  background: var(--black);
   color: #fff;
   height: 100vh;
-  padding: 20px;
+  padding: 1rem 2rem;
 
   @media (max-width: 768px) {
     display: none;

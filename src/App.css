@@ -1,16 +1,28 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  height: 100svh;
+  width: 100svw;
+  overflow: hidden;
 
-  --light-grey:#999999;
-  --grey:#5B5B5B;
+  --light-grey: #888888;
   --dark-grey: #1e1d1d;
-  --purple: #3d1b5e;
-  --deep-purple: #30124d;
+
+  --black: rgba(0, 0, 0, 0.2);
+
+  --green: #90ed7d;
+  --teal: #7dedda;
+  --cyan: #2ecdc9;
+  --blue: #7d90ed;
+  --light-blue: #7dc8ed;
+  --purple: #a27ded;
+  --red: #f05d80;
+  --peach: #ffcd9e;
+  --salmon: #ff5e4f;
+  --pink: #d900d5;
+
 }
- body {
+body {
   background-color: #1e1d1d;
   margin: 0;
 }
-
-

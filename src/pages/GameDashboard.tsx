@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import { games } from "../data/games";
-// import { WalletInfo } from "../components/WalletInfo";
 
 const GameDashboard: React.FC = () => {
   const [selectedGame, setSelectedGame] = useState<string>("");
 
   return (
     <div className="game-dashboard">
-      {/* <WalletInfo /> */}
 
       <div className="dashboard-header">
         <h2>Game Dashboard</h2>

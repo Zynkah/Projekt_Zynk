@@ -1,10 +1,9 @@
-import { WalletInfo } from "../components/WalletInfo";
+import { PageWrapper } from "../components/Pagewrapper";
+import { WalletBalanceDisplay } from "../hooks/useWalletBalance";
+
 
 export const WalletInfoPage = () => {
   return (
-    <div>
-      <h2>Wallet Info</h2>
-      <WalletInfo />
-    </div>
+    <PageWrapper title="Wallet Balance" description='' codeExample={<WalletBalanceDisplay />} features={[]} />
   );
 };

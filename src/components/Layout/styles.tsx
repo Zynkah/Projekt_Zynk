@@ -10,7 +10,7 @@ export const SAppHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--black);
   backdrop-filter: blur(10px);
 
   h1 {

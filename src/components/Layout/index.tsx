@@ -14,7 +14,7 @@ const Layout: React.FC = () => {
   return (
     <SCasinoApp>
       <SAppHeader>
-        <h1>Projekt Zynk</h1>
+        <h1>FPCORE</h1>
         <WalletConnection />
       </SAppHeader>
 
