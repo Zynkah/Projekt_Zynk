@@ -23,7 +23,7 @@ export const FundWalletCodeProps = [
     id: 4,
     prop: "stepIdx",
     type: "number",
-    description: "(Optional) Current step index (carousel)t.",
+    description: "(Optional) Current step index (carousel).",
   },
   {
     id: 5,
@@ -34,13 +34,13 @@ export const FundWalletCodeProps = [
   {
     id: 6,
     prop: "onTransferNext",
-    type: "	() => void",
+    type: "() => void",
     description: "(Optional) Handler for transfer next action",
   },
   {
     id: 7,
     prop: "onDepositNext",
-    type: "	() => void",
+    type: "() => void",
     description:
       "(Recommended) Handler for deposit next action. Pass the fundWallet function from useFundWallet (see below).",
   },

@@ -17,10 +17,7 @@ export const SPageWrapper = styled.div`
 
   h2 {
     text-align: center;
-    align-items: center;
-    justify-content: center;
   }
-
   ul {
     text-align: left;
   }

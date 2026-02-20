@@ -11,7 +11,6 @@ export const SAppHeader = styled.header`
   align-items: center;
   padding: 1rem 2rem;
   background: var(--black);
-  backdrop-filter: blur(10px);
 
   h1 {
     margin: 0;

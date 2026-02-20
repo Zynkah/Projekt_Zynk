@@ -11,10 +11,10 @@ interface PropItem {
 interface PageWrapperProps {
   title: string;
   description: string;
-    codeExample?: React.ReactNode;
-    codeSnippet?: React.ReactNode;
-    advancedCodeSnippet?: React.ReactNode;
-    
+  codeExample?: React.ReactNode;
+  codeSnippet?: React.ReactNode;
+  advancedCodeSnippet?: React.ReactNode;
+
   props?: PropItem[];
   features: string[];
 }
@@ -51,13 +51,15 @@ export const PageWrapper = ({
             <th>description</th>
           </tr>
         </thead>
-        {props?.map((prop) => (
-          <tr key={prop.id}>
-            <td>{prop.prop}</td>
-            <td>{prop.type}</td>
-            <td>{prop.description}</td>
-          </tr>
-        ))}
+        <tbody>
+          {props?.map((prop) => (
+            <tr key={prop.id}>
+              <td>{prop.prop}</td>
+              <td>{prop.type}</td>
+              <td>{prop.description}</td>
+            </tr>
+          ))}
+        </tbody>{" "}
       </table>
 
       <h3>Recommended usage:</h3>

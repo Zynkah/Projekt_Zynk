@@ -20,8 +20,6 @@ import {
   SRedText,
 } from "../../components/Pagewrapper/styles";
 
-
-
 const CodeSnippetWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <SRecommendedUsage>
@@ -84,11 +82,8 @@ export const RecommendedUsage = () => {
       <br />
       <SSixSpaceIndent />
       &#60;button <SOnClick />
-      &#123;() =&#62;{" "}
-      <SPurpleText>
-        <SPurpleText>setIsOpen</SPurpleText>
-      </SPurpleText>
-      (<SBlueText>true</SBlueText>
+      &#123;() =&#62; <SPurpleText>setIsOpen</SPurpleText> (
+      <SBlueText>true</SBlueText>
       )&#125;&#62;Open Fund Wallet Modal&#60;/button&#62;
       <br />
       <SSixSpaceIndent />
@@ -140,21 +135,24 @@ export const AdvancedUsage = () => {
       &#60;&#62;
       <br />
       <SSixSpaceIndent />
-      &#60;button &#60;button <SOnClick />
+      &#60;button <SOnClick />
       &#123;() =&#62; <SPurpleText>setIsOpen</SPurpleText>(
       <SBlueText>true</SBlueText>)&#125;&#62;Open Fund Wallet
       Modal&#60;/button&#62;
       <br />
       <SSixSpaceIndent />
-      &#60;<SOrangeText>FundWalletModal</SOrangeText>
+      &#60;<SOrangeText>FundWalletModal</SOrangeText> <SOnClick />
+      &#123;() =&#62; <SPurpleText>setIsOpen</SPurpleText>(
+      <SBlueText>true</SBlueText>)&#125;&#62;Open Fund Wallet
+      Modal&#60;/button&#62;
       <br />
       <SEightSpaceIndent />
       <SBlueText>isOpen</SBlueText>
       =&#123;isOpen&#125;
       <br />
       <SEightSpaceIndent />
-      <SBlueText>onClose</SBlueText>=&#123;() =&#62;{" "}
-      <SPurpleText>setIsOpen</SPurpleText>(<SBlueText>false</SBlueText>)&#125;{" "}
+      <SBlueText>onClose</SBlueText>=&#123;() =&#62; &#123;{" "}
+      <SPurpleText>setIsOpen</SPurpleText>(<SBlueText>false</SBlueText>);{" "}
       <SPurpleText>setStepIdx</SPurpleText>(<SBlueText>0</SBlueText>);
       &#125;&#125;
       <br />
