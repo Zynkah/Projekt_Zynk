@@ -1,6 +1,6 @@
 import { PrivyProvider } from "fare-privy-core";
 import "./App.css";
-import YourCasinoApp from "./components/YourCasinoApp";
+import Layout from "./components/Layout";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         loginMethods: ["wallet", "email", "sms"],
       }}
     >
-      <YourCasinoApp />
+      <Layout />
     </PrivyProvider>
   );
 }

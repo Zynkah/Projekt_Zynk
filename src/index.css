@@ -12,34 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.casino-app {
-  min-height: 100vh;
-  color: white;
-}
 
-.app-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-}
-
-.app-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.landing-page {
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.landing-page h2 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
 
 .game-dashboard {
   padding: 2rem;
@@ -74,7 +47,7 @@
 .game-card:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.1);
-  border-color: var(--deep-purple);
+  border-color: var(--purple);
 }
 
 .game-area {
@@ -111,7 +84,7 @@
   padding: 0.5rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--light-grey);
 }
 
 @media (max-width: 768px) {

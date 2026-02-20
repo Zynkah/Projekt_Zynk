@@ -25,7 +25,8 @@
     "permissionless": "^0.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^4.4.1",
+    "react-router-dom": "^7.13.0",
+    "styled-components": "^5.3.11",
     "valtio": "^1.12.0",
     "viem": "^2.39.0"
   },
@@ -34,6 +35,7 @@
     "@types/node": "^24.10.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
+    "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^5.1.0",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
