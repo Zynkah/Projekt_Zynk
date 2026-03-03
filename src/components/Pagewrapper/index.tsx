@@ -16,7 +16,7 @@ interface PageWrapperProps {
   advancedCodeSnippet?: React.ReactNode;
 
   props?: PropItem[];
-  features: string[];
+  features?: string[];
 }
 
 export const PageWrapper = ({
@@ -37,7 +37,7 @@ export const PageWrapper = ({
 
       <h3>Key Features:</h3>
       <ul>
-        {features.map((feature, index) => (
+        {features?.map((feature, index) => (
           <li key={index}>{feature}</li>
         ))}
       </ul>
@@ -59,7 +59,7 @@ export const PageWrapper = ({
               <td>{prop.description}</td>
             </tr>
           ))}
-        </tbody>{" "}
+        </tbody>
       </table>
 
       <h3>Recommended usage:</h3>

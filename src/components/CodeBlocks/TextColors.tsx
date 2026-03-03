@@ -8,6 +8,6 @@ export const SConst = () => {
 
 export const SOnClick = () => {
   return <SBlueText>onClick</SBlueText>;
-}
+};
 
 export const SUseState = () => { return <SPurpleText>useState</SPurpleText>; };

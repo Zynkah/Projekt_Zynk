@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import GameDashboard from "./pages/GameDashboard";
 import { SwitchWalletModal } from "./pages/SwitchWalletModal";
 import { WalletInfoPage } from "./pages/WalletInfo";
-import { WalletOverviewPage } from "./pages/WalletOverviewModal";
+import { WalletOverviewPage } from "./pages/WalletOverview";
 import { FundWalletPage } from "./pages/FundWalletModal/index";
 import { QuickPlayComponent } from "./components/QuickPlayModal";
 
