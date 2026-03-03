@@ -45,3 +45,26 @@ export const FundWalletCodeProps = [
       "(Recommended) Handler for deposit next action. Pass the fundWallet function from useFundWallet (see below).",
   },
 ];
+
+export const WalletOverviewProps = [
+  {
+    id: 1,
+    prop: "activeWallet",
+    type: "{ meta: { name: string; icon: string } }",
+    description:
+      "Object containing metadata about the active wallet, including its name and icon URL.",
+  },
+  {
+    id: 2,
+    prop: "onClick",
+    type: "() => void",
+    description: "(Optional) Click handler for the component.",
+  },
+  {
+    id: 3,
+    prop: "fallbackIcon",
+    type: "string",
+    description:
+      "URL of the fallback icon to display if the active wallet does not have an icon.",
+  },
+];
