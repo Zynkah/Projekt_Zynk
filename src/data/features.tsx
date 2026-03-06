@@ -22,7 +22,7 @@ export const SelectWalletFeatures = [
 
 export const QuickplayFeatures = [
   "Uses your own onApprove logic for setup/transactions",
-  "Approve button is enabled only when the currenlty active wallet is Privy",
+  "Approve button is enabled only when the currently active wallet is Privy",
   "Clear instructional guide for non-privy active wallets (Connect Privy Wallet label+helper text)",
-  "OPtional currencyName display override",
+  "Optional currencyName display override",
 ];

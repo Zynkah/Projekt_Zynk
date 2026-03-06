@@ -128,7 +128,7 @@ export const SelectWalletModalProps = [
   },
 ];
 
-export const QuickplayModalPorps = [
+export const QuickplayModalProps = [
   {
     id: 1,
     prop: "isVisible",
@@ -151,12 +151,12 @@ export const QuickplayModalPorps = [
     id: 4,
     prop: "onApprove",
     type: "(formData: any) => Promise<void> | void",
-    description: "called when user clicks APPROVE",
+    description: "Called when user clicks APPROVE",
   },
   {
     id: 5,
     prop: "currencyName",
     type: "string",
-    description: "(Optional) Curreny label shown in the modal body",
+    description: "(Optional) Currency label shown in the modal body",
   },
 ];
