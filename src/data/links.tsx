@@ -11,8 +11,8 @@ export const Links = [
     },
     {
         id: 3,
-        name: "Switch Wallet Modal",
-        to: '/switch-wallet'
+        name: "Select Wallet Modal",
+        to: '/select-wallet'
     },
     {
         id: 4,

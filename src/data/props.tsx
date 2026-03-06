@@ -68,3 +68,62 @@ export const WalletOverviewProps = [
       "URL of the fallback icon to display if the active wallet does not have an icon.",
   },
 ];
+
+export const SelectWalletModalProps = [
+  {
+    id: 1,
+    prop: "isOpen",
+    type: "boolean",
+    description: "Controls modal visibility.",
+  },
+  {
+    id: 2,
+    prop: "onClose",
+    type: "() => void",
+    description: "Function to close the modal.",
+  },
+  {
+    id: 3,
+    prop: "wallets",
+    type: `Array<{ address: string; meta: { name: string; icon: string }; walletClientType: string; linked: boolean }>`,
+    description: "List of wallet objects to display.",
+  },
+  {
+    id: 4,
+    prop: "appWalletClientType",
+    type: "string",
+    description: "The currently selected wallet client type.",
+  },
+  {
+    id: 5,
+    prop: "setAppWalletClientType",
+    type: "(type: string) => void",
+    description: "Function to set the selected wallet client type.",
+  },
+  {
+    id: 6,
+    prop: "linkWalletToUser",
+    type: "() => Promise<void>",
+    description: "Function to link a new wallet to the user.",
+  },
+  {
+    id: 7,
+    prop: "embeddedWalletLinks",
+    type: "Array<{ type: string; address?: string; number?: boolean }>",
+    description:
+      "(Optional) List of embedded wallet links for the privy wallet.",
+  },
+  {
+    id: 8,
+    prop: "icons",
+    type: `{ dragbar, privyIcon, caretDown, linkWallet, string }`,
+    description: "Object containing icon URLs or paths for modal UI.",
+  },
+  {
+    id: 9,
+    prop: "isMobileScreen",
+    type: "boolean",
+    description:
+      "(Optional) If true, enables mobile-specific modal behavior and layout",
+  },
+];
