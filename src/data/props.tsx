@@ -116,7 +116,7 @@ export const SelectWalletModalProps = [
   {
     id: 8,
     prop: "icons",
-    type: `{ dragbar, privyIcon, caretDown, linkWallet, string }`,
+    type: `{ dragbar: string; privyIcon: string; caretDown: string; linkWallet: string }`,
     description: "Object containing icon URLs or paths for modal UI.",
   },
   {
@@ -125,5 +125,38 @@ export const SelectWalletModalProps = [
     type: "boolean",
     description:
       "(Optional) If true, enables mobile-specific modal behavior and layout",
+  },
+];
+
+export const QuickplayModalPorps = [
+  {
+    id: 1,
+    prop: "isVisible",
+    type: "boolean",
+    description: "Controls modal visibility.",
+  },
+  {
+    id: 2,
+    prop: "setIsVisible",
+    type: "(isVisible: boolean) => void",
+    description: "Visibility state setter",
+  },
+  {
+    id: 3,
+    prop: "formData",
+    type: "any",
+    description: "Data passed into your approve handler",
+  },
+  {
+    id: 4,
+    prop: "onApprove",
+    type: "(formData: any) => Promise<void> | void",
+    description: "called when user clicks APPROVE",
+  },
+  {
+    id: 5,
+    prop: "currencyName",
+    type: "string",
+    description: "(Optional) Curreny label shown in the modal body",
   },
 ];

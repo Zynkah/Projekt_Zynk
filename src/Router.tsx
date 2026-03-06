@@ -4,7 +4,7 @@ import { SelectWalletModal } from "./pages/SelectWalletModal";
 import { WalletInfoPage } from "./pages/WalletInfo";
 import { WalletOverviewPage } from "./pages/WalletOverview";
 import { FundWalletPage } from "./pages/FundWalletModal/index";
-import { QuickPlayComponent } from "./components/QuickPlayModal";
+import { QuickplayPage } from "./pages/QuickPlayModal";
 
 export const PublicRoutes = () => {
   return (
@@ -15,7 +15,7 @@ export const PublicRoutes = () => {
       <Route path="/select-wallet" element={<SelectWalletModal />} />
       <Route path="/wallet-overview" element={<WalletOverviewPage />} />
       <Route path="/fund-wallet" element={<FundWalletPage />} />
-      <Route path="/quickplay" element={<QuickPlayComponent />} />
+      <Route path="/quickplay" element={<QuickplayPage />} />
     </Routes>
   );
 };
